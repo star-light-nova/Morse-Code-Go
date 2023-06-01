@@ -15,5 +15,6 @@ func New() Dictionary {
     return Dictionary{
         Alphabet: *newAlphabet(),
         Digits: *newDigits(),
+        P35S: *newP35S(),
     }
 }
