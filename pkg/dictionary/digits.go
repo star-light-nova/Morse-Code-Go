@@ -1,7 +1,7 @@
 package dictionary
 
-func newDigits() *map[rune]string {
-    return &map[rune]string {
+func Digits() map[rune]string {
+    return map[rune]string {
         '0': "-----",
         '1': ".----",
         '2': "..---",

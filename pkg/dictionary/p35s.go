@@ -1,7 +1,11 @@
 package dictionary
 
-func newP35S() *map[rune]string {
-    return &map[rune]string {
+/*
+* NOTE: P35S Represents - Punctuation Marks And Miscellaneous Signs
+*/
+
+func P35S() map[rune]string {
+    return map[rune]string {
         '⚠': "........",
         '&': ".-...",
         '\'': ".----.",

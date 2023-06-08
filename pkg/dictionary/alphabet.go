@@ -1,7 +1,7 @@
 package dictionary
 
-func newAlphabet() *map[rune]string {
-    return &map[rune]string {
+func Alphabet() map[rune]string {
+    return map[rune]string {
         'A': ".-",
         'B': "-...",
         'C': "-.-.",
