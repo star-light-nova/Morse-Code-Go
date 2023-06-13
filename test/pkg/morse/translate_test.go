@@ -1,16 +1,22 @@
 package morse_test
 
 import (
+	"fmt"
 	"testing"
 	"github.com/StarLightNova/Morse-Code-Go/pkg/morse"
 )
 
 func TestTranslate(t *testing.T) {
-    originalText := "SALEM, ALEM"
+    result := map[string]string{}
 
-    morseText := morse.Translate(originalText)
+    for text := range TRANSLATE_DICTIONARY() {
+        result[text] = morse.Translate(text)
+    }
 
-    if morseText != "... .- .-.. . -- --..-- / .- .-.. . --" {
-        t.Fatal("The function \"morse.Translate\" does not return the right value.")
+    for text := range TRANSLATE_DICTIONARY() {
+        if TRANSLATE_DICTIONARY()[text] != result[text] {
+            tableText := fmt.Sprintf("\n📑ORIGINAL TEXT: %s\n🧪CORRECT TRANSLATION: %s\n❌RETURNED TRANSLATION: %s", text, TRANSLATE_DICTIONARY()[text], result[text])
+            t.Fatalf("The Translate function from text ➡️  morse has returned incorrect result(-s).%s", tableText)
+        }
     }
 }

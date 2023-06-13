@@ -11,12 +11,12 @@ func Translate(text string) string {
 
     for _, runeValue := range textRunes {
         if runeValue == ' ' {
-            result += "/"
+            result += WORD_SEPARATOR
         } else {
             result += dictionary.All()[runeValue]
         }
 
-        result += " "
+        result += LETTER_SEPARATOR
     }
 
     return strings.TrimRight(result, " ")
