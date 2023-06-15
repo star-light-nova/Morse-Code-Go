@@ -5,7 +5,7 @@ import (
     "strings"
 )
 
-func Translate(text string) string {
+func Encode(text string) string {
     textRunes := []rune(strings.ToUpper(text))
     result := ""
 
