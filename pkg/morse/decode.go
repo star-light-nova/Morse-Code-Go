@@ -7,6 +7,11 @@ import (
 
 func Decode(morseText string) string {
     splitMorse := strings.Split(morseText, LETTER_SEPARATOR)
+    last := len(splitMorse) - 1
+
+    // The buffer reader adds `\n` to the end of the last string added after scan.
+    splitMorse[last] = strings.Trim(splitMorse[last], "\n")
+
     result := ""
 
     for _, morseCharacter := range splitMorse {
@@ -15,7 +20,6 @@ func Decode(morseText string) string {
         } else if morseCharacter != LETTER_SEPARATOR {
             result += string(dictionary.ReversedAll()[morseCharacter])
         }
-
     }
 
     return result
