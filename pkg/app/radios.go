@@ -7,7 +7,7 @@ import (
 )
 
 
-func radioWidgets() *widget.RadioGroup {
+func radioWidget() *widget.RadioGroup {
     options := []string{OPT_ENCODE, OPT_DECODE}
 
     radioGroup := widget.NewRadioGroup(options, func(value string) {
