@@ -3,12 +3,13 @@ package app
 import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
-    "github.com/StarLightNova/Morse-Code-Go/pkg/morse"
+	"github.com/StarLightNova/Morse-Code-Go/pkg/morse"
 )
 
-func radioAndMultiLinesContainer() *fyne.Container {
+func radioAndMultiLinesContainer(window fyne.Window) *fyne.Container {
     radio := radioWidget()
     inputLabel, inputMultiLineEntry, outputLabel, outputMultilineEntry := multilines()
+    copy := copyButton()
 
     radio.OnChanged = func(option string) {
         if option == OPT_ENCODE {
@@ -26,12 +27,17 @@ func radioAndMultiLinesContainer() *fyne.Container {
         }
     }
 
+    copy.OnTapped = func() {
+        window.Clipboard().SetContent(outputMultilineEntry.Text)
+    }
+
     vboxContainer := container.NewVBox(
         radio,
         inputLabel,
         inputMultiLineEntry,
         outputLabel,
         outputMultilineEntry,
+        copy,
     )
 
     return vboxContainer

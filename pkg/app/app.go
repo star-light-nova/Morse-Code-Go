@@ -10,7 +10,7 @@ func Start() {
     _app := app.New()
     window := _app.NewWindow("Morse Code Application")
 
-    window.SetContent(radioAndMultiLinesContainer())
+    window.SetContent(radioAndMultiLinesContainer(window))
 
     window.Resize(fyne.NewSize(DEFAULT_WIDTH, window.Content().MinSize().Width))
     window.ShowAndRun();

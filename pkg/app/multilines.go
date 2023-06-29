@@ -1,6 +1,9 @@
 package app
 
-import "fyne.io/fyne/v2/widget"
+import (
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/widget"
+)
 
 
 func multilines() (*widget.Label, *widget.Entry, *widget.Label, *widget.Entry) {
@@ -13,6 +16,9 @@ func multilines() (*widget.Label, *widget.Entry, *widget.Label, *widget.Entry) {
 func inputLabelMultiline() (*widget.Label, *widget.Entry){
     multiline := widget.NewMultiLineEntry()
 
+    multiline.Wrapping = fyne.TextWrapWord
+    multiline.TextStyle.Monospace = true
+
     // The default for the radios is "Encode"
     multiline.SetPlaceHolder("Enter text in English.")
 
@@ -21,6 +27,8 @@ func inputLabelMultiline() (*widget.Label, *widget.Entry){
 
 func outputLabelMultiline() (*widget.Label, *widget.Entry) {
     readOnlyOutput := widget.NewMultiLineEntry()
+
+    readOnlyOutput.Wrapping = fyne.TextWrapWord
 
     // Function `Disable()` makes Entry read-only
     readOnlyOutput.Disable()

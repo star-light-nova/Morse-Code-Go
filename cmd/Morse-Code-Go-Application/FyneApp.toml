@@ -1,0 +1,8 @@
+Website = "https://github.com/StarLightNova"
+
+[Details]
+Icon = "../../assets/MorseCodeIcon.png"
+Name = "Morse Code"
+ID = "https://github.com/StarLightNova/Morse-Code-Go"
+Version = "1.0"
+Build = 1
