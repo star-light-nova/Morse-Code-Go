@@ -6,7 +6,6 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-
 func radioWidget() *widget.RadioGroup {
     options := []string{OPT_ENCODE, OPT_DECODE}
 
