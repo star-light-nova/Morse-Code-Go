@@ -17,7 +17,6 @@ func inputLabelMultiline() (*widget.Label, *widget.Entry){
     multiline := widget.NewMultiLineEntry()
 
     multiline.Wrapping = fyne.TextWrapWord
-    multiline.TextStyle.Monospace = true
 
     // The default for the radios is "Encode"
     multiline.SetPlaceHolder("Enter text in English.")
