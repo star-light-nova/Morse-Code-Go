@@ -1,3 +1,5 @@
+<img src="./Icon.png" width="128px">
+
 # Morse Code
 
 # Content
