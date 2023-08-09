@@ -1,7 +1,7 @@
 package morse
 
 import (
-    "github.com/StarLightNova/Morse-Code-Go/pkg/dictionary"
+    "github.com/star-light-nova/Morse-Code-Go/pkg/dictionary"
     "strings"
 )
 

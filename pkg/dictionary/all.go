@@ -1,7 +1,7 @@
 package dictionary
 
 import (
-	"github.com/StarLightNova/Morse-Code-Go/pkg/mapassembler"
+	"github.com/star-light-nova/Morse-Code-Go/pkg/mapassembler"
 )
 
 func All() map[rune]string {

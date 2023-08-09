@@ -52,7 +52,7 @@
 
 ## Further Improvement
 
-[Are in the issues or in the GitHub projects.](https://github.com/users/StarLightNova/projects/2)
+[Are in the issues or in the GitHub projects.](https://github.com/users/star-light-nova/projects/2)
 
 # Packages
 

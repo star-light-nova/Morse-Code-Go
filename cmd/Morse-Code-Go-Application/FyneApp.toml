@@ -1,8 +1,8 @@
-Website = "https://github.com/StarLightNova"
+Website = "https://github.com/star-light-nova"
 
 [Details]
 Icon = "../../Icon.png"
 Name = "Morse Code"
-ID = "https://github.com/StarLightNova/Morse-Code-Go"
+ID = "https://github.com/star-light-nova/Morse-Code-Go"
 Version = "1.0"
 Build = 1

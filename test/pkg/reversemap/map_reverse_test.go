@@ -2,7 +2,7 @@ package reversemap_test
 
 import (
     "testing"
-    "github.com/StarLightNova/Morse-Code-Go/pkg/reversemap"
+    "github.com/star-light-nova/Morse-Code-Go/pkg/reversemap"
 )
 
 func TestReverseMap(t *testing.T) {
