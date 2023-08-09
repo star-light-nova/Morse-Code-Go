@@ -1,7 +1,7 @@
 package main
 
 import (
-    "github.com/star-light-nova/Morse-Code-Go/pkg/app"
+    "github.com/star-light-nova/morse-code-go/pkg/app"
 )
 
 func main() {

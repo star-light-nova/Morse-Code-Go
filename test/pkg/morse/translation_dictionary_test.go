@@ -1,7 +1,7 @@
 package morse_test
 
 import (
-    "github.com/star-light-nova/Morse-Code-Go/pkg/reversemap"
+    "github.com/star-light-nova/morse-code-go/pkg/reversemap"
 )
 
 func TRANSLATE_DICTIONARY() map[string]string{

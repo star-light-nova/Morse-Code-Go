@@ -2,7 +2,7 @@ package morse
 
 import (
 	"strings"
-	"github.com/star-light-nova/Morse-Code-Go/pkg/dictionary"
+	"github.com/star-light-nova/morse-code-go/pkg/dictionary"
 )
 
 func Decode(morseText string) string {

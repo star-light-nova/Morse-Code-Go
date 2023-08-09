@@ -4,7 +4,7 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/layout"
-	"github.com/star-light-nova/Morse-Code-Go/pkg/morse"
+	"github.com/star-light-nova/morse-code-go/pkg/morse"
 )
 
 func radioAndMultiLinesContainer(window fyne.Window) *fyne.Container {

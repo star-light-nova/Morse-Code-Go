@@ -3,7 +3,7 @@ package morse_test
 import (
 	"fmt"
 	"testing"
-	"github.com/star-light-nova/Morse-Code-Go/pkg/morse"
+	"github.com/star-light-nova/morse-code-go/pkg/morse"
 )
 
 func TestDecode(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/star-light-nova/Morse-Code-Go
+module github.com/star-light-nova/morse-code-go
 
 go 1.20
 

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/star-light-nova/Morse-Code-Go/pkg/morse"
+import "github.com/star-light-nova/morse-code-go/pkg/morse"
 
 func main() {
     morse.Start()
