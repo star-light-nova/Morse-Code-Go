@@ -24,6 +24,11 @@
 > ❓ The term Morse Code refers to either of two systems for representing letters of the alphabet, numerals, and punctuation marks by an arrangement of dots, dashes, and spaces. The codes are transmitted as electrical pulses of varied lengths or analogous mechanical or visual signals, such as flashing lights. The two systems are the original “American” Morse Code and the later International Morse Code, which became the global standard.
 > [Source](https://www.britannica.com/topic/Morse-Code)
 
+## Installation
+```bs
+go mod tidy
+```
+
 <a name="the-morse-code-international-table"></a>
 ## The Morse Code (International) table
 
